@@ -49,12 +49,14 @@ bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 super_1: super_1{
 compatible = "zmk,behavior-macro";
 label = "super_1";
+#binding-cells = <0>;
 wait-ms = <10>;
 bindings = <&sk LEFT_COMMAND &sk LEFT_CONTROL &sk LEFT_SHIFT &kp 1>;
 };
 super_2: super_2{
 compatible = "zmk,behavior-macro";
 label = "super_2";
+#binding-cells = <0>;
 wait-ms = <10>;
 bindings = <&sk LEFT_COMMAND &sk LEFT_CONTROL &sk LEFT_SHIFT &kp 2>;
 };
