@@ -56,5 +56,5 @@ super_2: super_2{
 compatible = "zmk,behavior-macro";
 label = "super_2";
 wait-ms = <10>;
-bindings = <&sk LEFT_COMMAND> &sk LEFT_CONTROL &sk LEFT_SHIFT &kp 2>;
+bindings = <&sk LEFT_COMMAND &sk LEFT_CONTROL &sk LEFT_SHIFT &kp 2>;
 };
