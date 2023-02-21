@@ -46,15 +46,23 @@ label = "macro_kinesis";
 #binding-cells = <0>;
 bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
-macro__1: macro__1{
-compatible = "zmk,behavior-macro";
-label = "macro__1";
-#binding-cells = <0>;
-bindings = <&sk LEFT_COMMAND &sk LEFT_CONTROL &sk LEFT_SHIFT &kp 1>;
+macro__1: macro__1 {
+    compatible = "zmk,behavior-macro";
+    label = "macro__1";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    bindings =
+        <&macro_press &kp LEFT_COMMAND &kp LEFT_CONTROL &kp LEFT_SHIFT>,
+        <&kp N1>,
+        <&macro_release &kp LEFT_COMMAND &kp LEFT_CONTROL &kp LEFT_SHIFT>;
 };
-macro__2: macro__2{
-compatible = "zmk,behavior-macro";
-label = "macro__2";
-#binding-cells = <0>;
-bindings = <&sk LEFT_COMMAND &sk LEFT_CONTROL &sk LEFT_SHIFT &kp 2>;
+macro__2: macro__2 {
+    compatible = "zmk,behavior-macro";
+    label = "macro__2";
+    #binding-cells = <0>;
+    wait-ms = <10>;
+    bindings =
+        <&macro_press &kp LEFT_COMMAND &kp LEFT_CONTROL &kp LEFT_SHIFT>,
+        <&kp N2>,
+        <&macro_release &kp LEFT_COMMAND &kp LEFT_CONTROL &kp LEFT_SHIFT>;
 };
