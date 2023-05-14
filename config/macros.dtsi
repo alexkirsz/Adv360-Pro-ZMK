@@ -46,13 +46,13 @@ label = "macro_kinesis";
 #binding-cells = <0>;
 bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
-macro_super_1: macro_super_1 {
+macro_super_1: macro_super_1{
 compatible = "zmk,behavior-macro";
 label = "macro_super_1";
 #binding-cells = <0>;
 bindings = <&kp LEFT_COMMAND>, <&kp LEFT_CONTROL>, <&kp LEFT_SHIFT>, <&kp N1>;
 };
-macro_super_2: macro_super_2 {
+macro_super_2: macro_super_2{
 compatible = "zmk,behavior-macro";
 label = "macro_super_2";
 #binding-cells = <0>;
